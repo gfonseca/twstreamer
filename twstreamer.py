@@ -5,8 +5,8 @@ import sys
 import pprint
 import json
 
-consumer_key = 'dvcNxv04JRtsTpXdqsT4YNwoQ'
-consumer_secret = 'vZheuS46AYjue0sYPq9f02jCEEpBD6xbOLZteZv3hrp0q3kX3N'
+consumer_key = '***'
+consumer_secret = '***'
 
 
 ## Getting access key and secret
