@@ -110,15 +110,15 @@ def mark_tt_simbols(text):
 
 def is_hash(simb):
 	reg = re.compile("\#\w+")
-	return bool(reg.match(simb))
+	return bool(reg.search(simb))
 
 def is_url(simb):
 	reg = re.compile("(http:\/\/)?([\w_-]+\.)+[\w]{2,3}(\/[^ \t]+)?")
-	return bool(reg.match(simb))
+	return bool(reg.search(simb))
 
 def is_usr(simb):
-	reg = re.compile("(http:\/\/)?([\w_-]+\.)+[\w]{2,3}(\/[^ \t]+)?")
-	return bool(reg.match(simb))
+	reg = re.compile("@[\w_]+")
+	return bool(reg.search(simb))
 
 if __name__ == "__main__":
 	
